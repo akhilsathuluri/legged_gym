@@ -4,7 +4,8 @@
     <inertial>
       <origin rpy="0 0 0" xyz=".0507 0 .0284"/>
       <mass value="0.1"/>
-      <inertia ixx=".00001" ixy="0." ixz=".015" iyy=".00001" iyz=".0" izz=".00001"/>
+      <!-- <inertia ixx=".00001" ixy="0." ixz=".015" iyy=".00001" iyz=".0" izz=".00001"/> -->
+      <inertia ixx=".00001" ixy="0." ixz=".000" iyy=".00001" iyz=".0" izz=".00001"/>
     </inertial>
   </link>
   <link name="pelvis">
@@ -150,7 +151,9 @@
     <inertial>
       <origin rpy="0 0 0" xyz=".0047 .0275 -0.0001"/>
       <mass value=".15"/>
-      <inertia ixx=".000287" ixy="-.0000986" ixz="-1.46e-06" iyy=".000171" iyz="1.72e-07" izz=".010449"/>
+      <!-- <inertia ixx=".000287" ixy="-.0000986" ixz="-1.46e-06" iyy=".000171" iyz="1.72e-07" izz=".010449"/> -->
+      <!-- <inertia ixx=".000287" ixy="0" ixz="0" iyy=".000171" iyz="0" izz=".00010449"/>-->
+      <inertia ixx=".00113" ixy="-.00288" ixz="-6.33e-05" iyy=".0231" iyz="3.62e-05" izz=".0239"/>
     </inertial>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
@@ -284,7 +287,8 @@
     <inertial>
       <origin rpy="0 0 0" xyz=".0047 .0275 0.0001"/>
       <mass value=".15"/>
-      <inertia ixx=".000287" ixy="-.0000986" ixz="1.46e-06" iyy=".000171" iyz="-1.72e-07" izz=".010449"/>
+      <!-- <inertia ixx=".000287" ixy="-.0000986" ixz="1.46e-06" iyy=".000171" iyz="-1.72e-07" izz=".010449"/> -->
+      <inertia ixx=".00113" ixy="-.00288" ixz="-6.33e-05" iyy=".0231" iyz="3.62e-05" izz=".0239"/>
     </inertial>
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
