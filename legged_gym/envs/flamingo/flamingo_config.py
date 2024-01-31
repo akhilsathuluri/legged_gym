@@ -25,7 +25,8 @@ class FlamingoRoughCfg(LeggedRobotCfg):
         measured_points_y = [-0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
 
     class init_state(LeggedRobotCfg.init_state):
-        pos = [0.0, 0.0, 1.0]  # x,y,z [m]
+        # pos = [0.0, 0.0, 1.0]  # x,y,z [m]
+        pos = [0.0, 0.0, 0.55]  # x,y,z [m]
         default_joint_angles = {  # = target angles [rad] when action = 0.0
             "hip_roll_l": 0,
             "hip_pitch_l": 0,
@@ -67,6 +68,8 @@ class FlamingoRoughCfg(LeggedRobotCfg):
         terminate_after_contacts_on = ["base_link", "hip-roll-l_1", "hip-link-l_1", "hip-roll-r_1", "hip-link-r_1"]
         flip_visual_attachments = False
         self_collisions = 1  # 1 to disable, 0 to enable...bitwise filter
+        max_angular_velocity = 100.0
+        max_linear_velocity = 100.0
 
     class rewards(LeggedRobotCfg.rewards):
         soft_dof_pos_limit = 0.95
