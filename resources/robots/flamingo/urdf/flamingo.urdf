@@ -662,7 +662,7 @@
     <parent link="base_link"/>
     <child link="hip-roll-l_1"/>
   </joint>
-  <joint name="hip_roll_l" type="continuous">
+  <joint name="hip_roll_l" type="revolute">
     <origin rpy="0 0 0" xyz="0.0 0.0205 -0.0"/>
     <parent link="hip-roll-l_1"/>
     <child link="hip-link-l_1"/>
@@ -673,7 +673,7 @@
     <parent link="hip-link-l_1"/>
     <child link="hip-pitch-l_1"/>
   </joint>
-  <joint name="hip_pitch_l" type="continuous">
+  <joint name="hip_pitch_l" type="revolute">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="hip-pitch-l_1"/>
     <child link="thigh-l_1"/>
@@ -684,7 +684,7 @@
     <parent link="thigh-l_1"/>
     <child link="knee-l_1"/>
   </joint>
-  <joint name="knee_l" type="continuous">
+  <joint name="knee_l" type="revolute">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="knee-l_1"/>
     <child link="tibia-l_1"/>
@@ -695,7 +695,7 @@
     <parent link="tibia-l_1"/>
     <child link="ankle-l_1"/>
   </joint>
-  <joint name="ankle_l" type="continuous">
+  <joint name="ankle_l" type="revolute">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="ankle-l_1"/>
     <child link="tarsal-l_1"/>
@@ -706,7 +706,7 @@
     <parent link="tarsal-l_1"/>
     <child link="toes-l_1"/>
   </joint>
-  <joint name="feet_l" type="continuous">
+  <joint name="feet_l" type="revolute">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="toes-l_1"/>
     <child link="foot-l_1"/>
@@ -717,7 +717,7 @@
     <parent link="base_link"/>
     <child link="hip-roll-r_1"/>
   </joint>
-  <joint name="hip_roll_r" type="continuous">
+  <joint name="hip_roll_r" type="revolute">
     <origin rpy="0 0 0" xyz="0.0 0.0205 0.0"/>
     <parent link="hip-roll-r_1"/>
     <child link="hip-link-r_1"/>
@@ -728,7 +728,7 @@
     <parent link="hip-link-r_1"/>
     <child link="hip-pitch-r_1"/>
   </joint>
-  <joint name="hip_pitch_r" type="continuous">
+  <joint name="hip_pitch_r" type="revolute">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="hip-pitch-r_1"/>
     <child link="thigh-r_1"/>
@@ -739,7 +739,7 @@
     <parent link="thigh-r_1"/>
     <child link="knee-r_1"/>
   </joint>
-  <joint name="knee_r" type="continuous">
+  <joint name="knee_r" type="revolute">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="knee-r_1"/>
     <child link="tibia-r_1"/>
@@ -750,7 +750,7 @@
     <parent link="tibia-r_1"/>
     <child link="ankle-r_1"/>
   </joint>
-  <joint name="ankle_r" type="continuous">
+  <joint name="ankle_r" type="revolute">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="ankle-r_1"/>
     <child link="tarsal-r_1"/>
@@ -761,7 +761,7 @@
     <parent link="tarsal-r_1"/>
     <child link="toes-r_1"/>
   </joint>
-  <joint name="feet_r" type="continuous">
+  <joint name="feet_r" type="revolute">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="toes-r_1"/>
     <child link="foot-r_1"/>

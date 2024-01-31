@@ -1,4 +1,5 @@
 from legged_gym.envs.base.legged_robot_config import LeggedRobotCfg, LeggedRobotCfgPPO
+import numpy as np
 
 
 class FlamingoRoughCfg(LeggedRobotCfg):
@@ -42,20 +43,23 @@ class FlamingoRoughCfg(LeggedRobotCfg):
 
     class control(LeggedRobotCfg.control):
         # PD Drive parameters:
-        # stiffness = {
-        #     "hip_roll": 100.0,
-        #     "hip_pitch": 100.0,
-        #     "knee": 200.0,
-        #     "ankle": 200.0,
-        #     "feet": 40.0,
-        # }  # [N*m/rad]
-        # damping = {
-        #     "hip_roll": 3.0,
-        #     "hip_pitch": 3.0,
-        #     "knee": 6.0,
-        #     "ankle": 6.0,
-        #     "feet": 6.0,
-        # }  # [N*m*s/rad]     # [N*m*s/rad]
+        names = [
+            "hip_roll",
+            "hip_pitch",
+            "knee",
+            "ankle",
+            "feet",
+        ]
+        stiffness_b = np.array([100.0, 100.0, 200.0, 200.0, 40.0])  # [N*m/rad]
+        damping_b = np.array([3.0, 3.0, 6.0, 6.0, 1.0])  # [N*m*s/rad]     # [N*m*s/rad]
+
+        # scale the PD values
+        stiffness_scale = 5e-2
+        damping_scale = 5e-2
+
+        stiffness = dict(zip(names, stiffness_b * stiffness_scale))
+        damping = dict(zip(names, damping_b * damping_scale))
+
         # action scale: target angle = actionScale * action + defaultAngle
         action_scale = 0.5
         # decimation: Number of control action updates @ sim DT per policy DT
@@ -78,8 +82,8 @@ class FlamingoRoughCfg(LeggedRobotCfg):
         ]
         flip_visual_attachments = False
         self_collisions = 1  # 1 to disable, 0 to enable...bitwise filter
-        max_angular_velocity = 100.0
-        max_linear_velocity = 100.0
+        max_angular_velocity = 10.0
+        max_linear_velocity = 10.0
 
     class rewards(LeggedRobotCfg.rewards):
         # soft_dof_pos_limit = 0.95
