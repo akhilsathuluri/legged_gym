@@ -246,14 +246,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/base_link.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -266,14 +266,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.08 -0.0 -0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-roll-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-roll-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.08 -0.0 -0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-roll-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-roll-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -286,14 +286,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.08 -0.0205 0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-link-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-link-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.08 -0.0205 0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-link-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-link-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -306,14 +306,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.08 -0.1125 0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-pitch-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-pitch-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.08 -0.1125 0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-pitch-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-pitch-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -326,14 +326,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.08 -0.1125 0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/thigh-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/thigh-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.08 -0.1125 0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/thigh-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/thigh-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -346,14 +346,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.08 -0.0375 0.129904"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/knee-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/knee-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.08 -0.0375 0.129904"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/knee-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/knee-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -366,14 +366,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.08 -0.0375 0.129904"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/tibia-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tibia-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.08 -0.0375 0.129904"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/tibia-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tibia-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -386,14 +386,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.08 -0.1575 0.33775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/ankle-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/ankle-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.08 -0.1575 0.33775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/ankle-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/ankle-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -406,14 +406,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.08 -0.1575 0.33775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/tarsal-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tarsal-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.08 -0.1575 0.33775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/tarsal-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tarsal-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -426,14 +426,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.08 0.033026 0.44775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/toes-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/toes-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.08 0.033026 0.44775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/toes-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/toes-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -446,14 +446,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="-0.08 0.033026 0.44775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/foot-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/foot-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="-0.08 0.033026 0.44775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/foot-l_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/foot-l_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -466,14 +466,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.08 -0.008 -0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-roll-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-roll-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.08 -0.008 -0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-roll-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-roll-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -486,14 +486,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.08 -0.0285 -0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-link-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-link-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.08 -0.0285 -0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-link-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-link-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -506,14 +506,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.08 -0.1205 -0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-pitch-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-pitch-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.08 -0.1205 -0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/hip-pitch-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/hip-pitch-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -526,14 +526,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.08 -0.1205 -0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/thigh-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/thigh-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.08 -0.1205 -0.0"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/thigh-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/thigh-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -546,14 +546,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.08 -0.0455 0.129904"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/knee-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/knee-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.08 -0.0455 0.129904"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/knee-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/knee-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -566,14 +566,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.08 -0.0455 0.129904"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/tibia-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tibia-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.08 -0.0455 0.129904"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/tibia-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tibia-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -586,34 +586,34 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.08 -0.1655 0.33775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/ankle-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/ankle-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.08 -0.1655 0.33775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/ankle-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/ankle-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
   <link name="tarsal-r_1">
     <inertial>
-      <origin rpy="0 0 0" xyz="4.440892098500626e-16 -0.09671813780361424 -0.05584015037236684"/>
-      <mass value="0.07751176852113108"/>
-      <inertia ixx="0.000341" ixy="-0.0" ixz="-0.0" iyy="9.6e-05" iyz="-0.000142" izz="0.00026"/>
+      <origin rpy="0 0 0" xyz="4.0245584642661925e-16 -0.09671813780361424 -0.05584015037236717"/>
+      <mass value="0.07751176852113106"/>
+      <inertia ixx="0.000341" ixy="-0.0" ixz="0.0" iyy="9.6e-05" iyz="-0.000142" izz="0.00026"/>
     </inertial>
     <visual>
       <origin rpy="0 0 0" xyz="0.08 -0.1655 0.33775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/tarsal-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tarsal-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.08 -0.1655 0.33775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/tarsal-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/tarsal-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -626,14 +626,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.08 0.025026 0.44775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/toes-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/toes-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.08 0.025026 0.44775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/toes-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/toes-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
@@ -646,122 +646,122 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.08 0.025026 0.44775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/foot-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/foot-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="silver"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.08 0.025026 0.44775"/>
       <geometry>
-        <mesh filename="/home/wslaniakea/git/biped/biped-full/meshes/foot-r_1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="../meshes/foot-r_1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
   </link>
-  <joint name="Rigid 122" type="fixed">
+  <joint name="fixed_hip_roll_l" type="fixed">
     <origin rpy="0 0 0" xyz="0.08 0.0 0.0"/>
     <parent link="base_link"/>
     <child link="hip-roll-l_1"/>
   </joint>
-  <joint name="Revolute 123" type="continuous">
+  <joint name="hip_roll_l" type="continuous">
     <origin rpy="0 0 0" xyz="0.0 0.0205 -0.0"/>
     <parent link="hip-roll-l_1"/>
     <child link="hip-link-l_1"/>
     <axis xyz="0.0 1.0 -0.0"/>
   </joint>
-  <joint name="Rigid 124" type="fixed">
+  <joint name="fixed_hip_pitch_l" type="fixed">
     <origin rpy="0 0 0" xyz="0.0 0.092 0.0"/>
     <parent link="hip-link-l_1"/>
     <child link="hip-pitch-l_1"/>
   </joint>
-  <joint name="Revolute 125" type="continuous">
+  <joint name="hip_pitch_l" type="continuous">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="hip-pitch-l_1"/>
     <child link="thigh-l_1"/>
     <axis xyz="-1.0 0.0 0.0"/>
   </joint>
-  <joint name="Rigid 126" type="fixed">
+  <joint name="fixed_knee_l" type="fixed">
     <origin rpy="0 0 0" xyz="0.0 -0.075 -0.129904"/>
     <parent link="thigh-l_1"/>
     <child link="knee-l_1"/>
   </joint>
-  <joint name="Revolute 127" type="continuous">
+  <joint name="knee_l" type="continuous">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="knee-l_1"/>
     <child link="tibia-l_1"/>
     <axis xyz="-1.0 -0.0 -0.0"/>
   </joint>
-  <joint name="Rigid 128" type="fixed">
+  <joint name="fixed_ankle_l" type="fixed">
     <origin rpy="0 0 0" xyz="0.0 0.12 -0.207846"/>
     <parent link="tibia-l_1"/>
     <child link="ankle-l_1"/>
   </joint>
-  <joint name="Revolute 129" type="continuous">
+  <joint name="ankle_l" type="continuous">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="ankle-l_1"/>
     <child link="tarsal-l_1"/>
     <axis xyz="1.0 0.0 0.0"/>
   </joint>
-  <joint name="Rigid 130" type="fixed">
+  <joint name="fixed_toe_l" type="fixed">
     <origin rpy="0 0 0" xyz="0.0 -0.190526 -0.11"/>
     <parent link="tarsal-l_1"/>
     <child link="toes-l_1"/>
   </joint>
-  <joint name="Revolute 131" type="continuous">
+  <joint name="feet_l" type="continuous">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="toes-l_1"/>
     <child link="foot-l_1"/>
     <axis xyz="-1.0 0.0 0.0"/>
   </joint>
-  <joint name="Rigid 132" type="fixed">
+  <joint name="fixed_hip_roll_r" type="fixed">
     <origin rpy="0 0 0" xyz="-0.08 0.008 0.0"/>
     <parent link="base_link"/>
     <child link="hip-roll-r_1"/>
   </joint>
-  <joint name="Revolute 133" type="continuous">
+  <joint name="hip_roll_r" type="continuous">
     <origin rpy="0 0 0" xyz="0.0 0.0205 0.0"/>
     <parent link="hip-roll-r_1"/>
     <child link="hip-link-r_1"/>
-    <axis xyz="-0.0 1.0 -0.0"/>
+    <axis xyz="0.0 1.0 -0.0"/>
   </joint>
-  <joint name="Rigid 134" type="fixed">
+  <joint name="fixed_hip_pitch_r" type="fixed">
     <origin rpy="0 0 0" xyz="0.0 0.092 0.0"/>
     <parent link="hip-link-r_1"/>
     <child link="hip-pitch-r_1"/>
   </joint>
-  <joint name="Revolute 135" type="continuous">
+  <joint name="hip_pitch_r" type="continuous">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="hip-pitch-r_1"/>
     <child link="thigh-r_1"/>
     <axis xyz="-1.0 -0.0 0.0"/>
   </joint>
-  <joint name="Rigid 136" type="fixed">
+  <joint name="fixed_knee_r" type="fixed">
     <origin rpy="0 0 0" xyz="0.0 -0.075 -0.129904"/>
     <parent link="thigh-r_1"/>
     <child link="knee-r_1"/>
   </joint>
-  <joint name="Revolute 137" type="continuous">
+  <joint name="knee_r" type="continuous">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="knee-r_1"/>
     <child link="tibia-r_1"/>
     <axis xyz="-1.0 0.0 -0.0"/>
   </joint>
-  <joint name="Rigid 138" type="fixed">
+  <joint name="fixed_ankle_r" type="fixed">
     <origin rpy="0 0 0" xyz="0.0 0.12 -0.207846"/>
     <parent link="tibia-r_1"/>
     <child link="ankle-r_1"/>
   </joint>
-  <joint name="Revolute 139" type="continuous">
+  <joint name="ankle_r" type="continuous">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="ankle-r_1"/>
     <child link="tarsal-r_1"/>
     <axis xyz="1.0 -0.0 0.0"/>
   </joint>
-  <joint name="Rigid 140" type="fixed">
+  <joint name="fixed_toe_r" type="fixed">
     <origin rpy="0 0 0" xyz="0.0 -0.190526 -0.11"/>
     <parent link="tarsal-r_1"/>
     <child link="toes-r_1"/>
   </joint>
-  <joint name="Revolute 141" type="continuous">
+  <joint name="feet_r" type="continuous">
     <origin rpy="0 0 0" xyz="0.0 0.0 0.0"/>
     <parent link="toes-r_1"/>
     <child link="foot-r_1"/>

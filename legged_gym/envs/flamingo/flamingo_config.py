@@ -4,9 +4,9 @@ from legged_gym.envs.base.legged_robot_config import LeggedRobotCfg, LeggedRobot
 class FlamingoRoughCfg(LeggedRobotCfg):
     class env(LeggedRobotCfg.env):
         num_envs = 4096
-        # TODO: Change the num obs and actions
-        num_observations = 169
-        num_actions = 12
+        # TODO: Change the num obs
+        num_observations = 163
+        num_actions = 10
 
     class terrain(LeggedRobotCfg.terrain):
         measured_points_x = [
@@ -27,37 +27,33 @@ class FlamingoRoughCfg(LeggedRobotCfg):
     class init_state(LeggedRobotCfg.init_state):
         pos = [0.0, 0.0, 1.0]  # x,y,z [m]
         default_joint_angles = {  # = target angles [rad] when action = 0.0
-            "hip_abduction_left": 0.1,
-            "hip_rotation_left": 0.0,
-            "hip_flexion_left": 1.0,
-            "thigh_joint_left": -1.8,
-            "ankle_joint_left": 1.57,
-            "toe_joint_left": -1.57,
-            "hip_abduction_right": -0.1,
-            "hip_rotation_right": 0.0,
-            "hip_flexion_right": 1.0,
-            "thigh_joint_right": -1.8,
-            "ankle_joint_right": 1.57,
-            "toe_joint_right": -1.57,
+            "hip_roll_l": 0,
+            "hip_pitch_l": 0,
+            "knee_l": 0,
+            "ankle_l": 0,
+            "feet_l": 0,
+            "hip_roll_r": 0,
+            "hip_pitch_r": 0,
+            "knee_r": 0,
+            "ankle_r": 0,
+            "feet_r": 0,
         }
 
     class control(LeggedRobotCfg.control):
         # PD Drive parameters:
         stiffness = {
-            "hip_abduction": 100.0,
-            "hip_rotation": 100.0,
-            "hip_flexion": 200.0,
-            "thigh_joint": 200.0,
-            "ankle_joint": 200.0,
-            "toe_joint": 40.0,
+            "hip_roll": 100.0,
+            "hip_pitch": 100.0,
+            "knee": 200.0,
+            "ankle": 200.0,
+            "feet": 40.0,
         }  # [N*m/rad]
         damping = {
-            "hip_abduction": 3.0,
-            "hip_rotation": 3.0,
-            "hip_flexion": 6.0,
-            "thigh_joint": 6.0,
-            "ankle_joint": 6.0,
-            "toe_joint": 1.0,
+            "hip_roll": 3.0,
+            "hip_pitch": 3.0,
+            "knee": 6.0,
+            "ankle": 6.0,
+            "feet": 6.0,
         }  # [N*m*s/rad]     # [N*m*s/rad]
         # action scale: target angle = actionScale * action + defaultAngle
         action_scale = 0.5
@@ -65,10 +61,10 @@ class FlamingoRoughCfg(LeggedRobotCfg):
         decimation = 4
 
     class asset(LeggedRobotCfg.asset):
-        file = "{LEGGED_GYM_ROOT_DIR}/resources/robots/cassie/urdf/cassie.urdf"
-        name = "cassie"
-        foot_name = "toe"
-        terminate_after_contacts_on = ["pelvis"]
+        file = "{LEGGED_GYM_ROOT_DIR}/resources/robots/flamingo/urdf/flamingo.urdf"
+        name = "flamingo"
+        foot_name = "feet"
+        terminate_after_contacts_on = ["base_link"]
         flip_visual_attachments = False
         self_collisions = 1  # 1 to disable, 0 to enable...bitwise filter
 
@@ -93,10 +89,10 @@ class FlamingoRoughCfg(LeggedRobotCfg):
             feet_contact_forces = -0.0
 
 
-class CassieRoughCfgPPO(LeggedRobotCfgPPO):
+class FlamingoRoughCfgPPO(LeggedRobotCfgPPO):
     class runner(LeggedRobotCfgPPO.runner):
         run_name = ""
-        experiment_name = "rough_cassie"
+        experiment_name = "rough_flamingo"
 
     class algorithm(LeggedRobotCfgPPO.algorithm):
         entropy_coef = 0.01
