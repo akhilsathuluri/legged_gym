@@ -64,7 +64,7 @@ class FlamingoRoughCfg(LeggedRobotCfg):
         file = "{LEGGED_GYM_ROOT_DIR}/resources/robots/flamingo/urdf/flamingo.urdf"
         name = "flamingo"
         foot_name = "feet"
-        terminate_after_contacts_on = ["base_link"]
+        terminate_after_contacts_on = ["base_link", "hip-roll-l_1", "hip-link-l_1", "hip-roll-r_1", "hip-link-r_1"]
         flip_visual_attachments = False
         self_collisions = 1  # 1 to disable, 0 to enable...bitwise filter
 
