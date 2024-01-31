@@ -26,7 +26,7 @@ class FlamingoRoughCfg(LeggedRobotCfg):
 
     class init_state(LeggedRobotCfg.init_state):
         # pos = [0.0, 0.0, 1.0]  # x,y,z [m]
-        pos = [0.0, 0.0, 0.55]  # x,y,z [m]
+        pos = [0.0, 0.0, 0.5]  # x,y,z [m]
         default_joint_angles = {  # = target angles [rad] when action = 0.0
             "hip_roll_l": 0,
             "hip_pitch_l": 0,
@@ -42,20 +42,20 @@ class FlamingoRoughCfg(LeggedRobotCfg):
 
     class control(LeggedRobotCfg.control):
         # PD Drive parameters:
-        stiffness = {
-            "hip_roll": 100.0,
-            "hip_pitch": 100.0,
-            "knee": 200.0,
-            "ankle": 200.0,
-            "feet": 40.0,
-        }  # [N*m/rad]
-        damping = {
-            "hip_roll": 3.0,
-            "hip_pitch": 3.0,
-            "knee": 6.0,
-            "ankle": 6.0,
-            "feet": 6.0,
-        }  # [N*m*s/rad]     # [N*m*s/rad]
+        # stiffness = {
+        #     "hip_roll": 100.0,
+        #     "hip_pitch": 100.0,
+        #     "knee": 200.0,
+        #     "ankle": 200.0,
+        #     "feet": 40.0,
+        # }  # [N*m/rad]
+        # damping = {
+        #     "hip_roll": 3.0,
+        #     "hip_pitch": 3.0,
+        #     "knee": 6.0,
+        #     "ankle": 6.0,
+        #     "feet": 6.0,
+        # }  # [N*m*s/rad]     # [N*m*s/rad]
         # action scale: target angle = actionScale * action + defaultAngle
         action_scale = 0.5
         # decimation: Number of control action updates @ sim DT per policy DT
@@ -65,16 +65,26 @@ class FlamingoRoughCfg(LeggedRobotCfg):
         file = "{LEGGED_GYM_ROOT_DIR}/resources/robots/flamingo/urdf/flamingo.urdf"
         name = "flamingo"
         foot_name = "feet"
-        terminate_after_contacts_on = ["base_link", "hip-roll-l_1", "hip-link-l_1", "hip-roll-r_1", "hip-link-r_1"]
+        terminate_after_contacts_on = [
+            "base_link",
+            "hip-roll-l_1",
+            "hip-link-l_1",
+            "hip-roll-r_1",
+            "hip-link-r_1",
+            "thigh-l_1",
+            "thigh-r_1",
+            "ankle-l_1",
+            "ankle-r_1",
+        ]
         flip_visual_attachments = False
         self_collisions = 1  # 1 to disable, 0 to enable...bitwise filter
         max_angular_velocity = 100.0
         max_linear_velocity = 100.0
 
     class rewards(LeggedRobotCfg.rewards):
-        soft_dof_pos_limit = 0.95
-        soft_dof_vel_limit = 0.9
-        soft_torque_limit = 0.9
+        # soft_dof_pos_limit = 0.95
+        # soft_dof_vel_limit = 0.9
+        # soft_torque_limit = 0.9
         max_contact_force = 300.0
         only_positive_rewards = False
 
