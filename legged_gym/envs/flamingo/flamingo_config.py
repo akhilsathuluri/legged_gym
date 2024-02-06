@@ -10,20 +10,22 @@ class FlamingoRoughCfg(LeggedRobotCfg):
         num_actions = 10
 
     class terrain(LeggedRobotCfg.terrain):
-        measured_points_x = [
-            -0.5,
-            -0.4,
-            -0.3,
-            -0.2,
-            -0.1,
-            0.0,
-            0.1,
-            0.2,
-            0.3,
-            0.4,
-            0.5,
-        ]  # 1mx1m rectangle (without center line)
-        measured_points_y = [-0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+        # measured_points_x = [
+        #     -0.5,
+        #     -0.4,
+        #     -0.3,
+        #     -0.2,
+        #     -0.1,
+        #     0.0,
+        #     0.1,
+        #     0.2,
+        #     0.3,
+        #     0.4,
+        #     0.5,
+        # ]  # 1mx1m rectangle (without center line)
+        # measured_points_y = [-0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5]
+        mesh_type = "plane"
+        measure_heights = False
 
     class init_state(LeggedRobotCfg.init_state):
         # pos = [0.0, 0.0, 1.0]  # x,y,z [m]
@@ -61,7 +63,8 @@ class FlamingoRoughCfg(LeggedRobotCfg):
         damping = dict(zip(names, damping_b * damping_scale))
 
         # action scale: target angle = actionScale * action + defaultAngle
-        action_scale = 0.5
+        # action_scale = 0.5
+        action_scale = 0.25
         # decimation: Number of control action updates @ sim DT per policy DT
         decimation = 4
 
@@ -75,22 +78,24 @@ class FlamingoRoughCfg(LeggedRobotCfg):
             "hip-link-l_1",
             "hip-roll-r_1",
             "hip-link-r_1",
-            "thigh-l_1",
-            "thigh-r_1",
-            "ankle-l_1",
-            "ankle-r_1",
+            # "thigh-l_1",
+            # "thigh-r_1",
+            # "ankle-l_1",
+            # "ankle-r_1",
         ]
         flip_visual_attachments = False
         self_collisions = 1  # 1 to disable, 0 to enable...bitwise filter
-        max_angular_velocity = 10.0
-        max_linear_velocity = 10.0
+        max_angular_velocity = 50.0
+        max_linear_velocity = 50.0
 
     class rewards(LeggedRobotCfg.rewards):
         # soft_dof_pos_limit = 0.95
-        # soft_dof_vel_limit = 0.9
-        # soft_torque_limit = 0.9
+        soft_dof_vel_limit = 0.9
+        soft_torque_limit = 0.9
         max_contact_force = 300.0
         only_positive_rewards = False
+        # from a1 config
+        # base_height_target = 0.25
 
         class scales(LeggedRobotCfg.rewards.scales):
             termination = -200.0
