@@ -6,7 +6,8 @@ class FlamingoRoughCfg(LeggedRobotCfg):
     class env(LeggedRobotCfg.env):
         num_envs = 4096
         # TODO: Change the num obs
-        num_observations = 163
+        # num_observations = 163
+        num_observations = 42
         num_actions = 10
 
     class terrain(LeggedRobotCfg.terrain):
