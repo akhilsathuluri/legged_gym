@@ -57,8 +57,8 @@ class FlamingoRoughCfg(LeggedRobotCfg):
         damping_b = np.array([3.0, 3.0, 6.0, 6.0, 1.0])  # [N*m*s/rad]     # [N*m*s/rad]
 
         # scale the PD values
-        stiffness_scale = 5e-2
-        damping_scale = 5e-2
+        stiffness_scale = 1e-2
+        damping_scale = 1e-2
 
         stiffness = dict(zip(names, stiffness_b * stiffness_scale))
         damping = dict(zip(names, damping_b * damping_scale))
